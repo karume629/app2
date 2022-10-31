@@ -1,10 +1,12 @@
 import React from 'react'
 import Task from './Task'
 
-const Tasklist = () => {
+const Tasklist = ({data}) => {
+  console.log("data from tasklist",data)
   return (
     <div>
-      <Task />
+      <Task data={data}/>
+
     </div>
   )
 }

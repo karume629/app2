@@ -1,6 +1,7 @@
 import React from 'react'
 
-const Task = () => {
+const Task = ({data}) => {
+  console.log("data from task",data)
   return (
     <div>
         <ul>
