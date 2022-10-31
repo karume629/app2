@@ -1,12 +1,13 @@
-import React from 'react'
-import { Form } from 'react-router-dom'
+import React, { useState } from 'react'
 
 const TaskForm = () => {
+  const [task, setTask]= useState('')
   return (
     <div>
-        <form>
-        
-        </form>
+      <form>
+      <input type="text" name="task" value={task} onChange={e=>setTask(e.target.value)} placeholder="Add task"/>
+      <input type="submit" />
+      </form>
     </div>
   )
 }
