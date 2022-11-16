@@ -5,7 +5,13 @@ const Tasklist = ({data}) => {
   console.log("data from tasklist",data)
   return (
     <div>
-      <Task data={data}/>
+      <ul>
+        {
+          data.map(item => {
+            return <Task task={item.task} id={item.id} />
+          })
+        }
+      </ul>
 
     </div>
   )

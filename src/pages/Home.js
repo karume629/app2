@@ -7,17 +7,12 @@ import { BASE_URL } from '../constant/constant'
 
 
 
-const Home = () => {
-const [data, setData] = useState([])
-useEffect(()=>{
-  fetch(`${BASE_URL}/tasks`)
-  .then((response) => response.json())
-  .then((data) => setData(data));
-},[])
+const Home = ({data, newData}) => {
+
   return (
     <div>
       <Header />
-      <TaskForm />
+      <TaskForm newData={newData} />
       <Tasklist data={data} />
       <Footer />
     </div>

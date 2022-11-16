@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 
-const TaskForm = () => {
-  const [task, setTask]= useState('')
-  const handleSubmit=(e)=>{
+const TaskForm = ({newData}) => {
+  const [task, setTask] = useState("")
+
+  const handleSubmit = e => {
     e.preventDefault()
-    console.log (task)
-    setTask("")
+    newData(task)
   }
     
   return (

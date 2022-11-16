@@ -1,15 +1,10 @@
 import React from 'react'
 
-const Task = ({data}) => {
-  console.log("data from task",data)
+const Task = ({task, id}) => {
   return (
-    <div>
-        <ul>
-            <li>fetch water</li>
-            <li>Buy milk</li>
-            <li>Buy shoes</li>
-        </ul>
-    </div>
+    <>
+        <li>{task}</li>
+    </>
   )
 }
 
