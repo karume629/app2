@@ -9,7 +9,7 @@ const TaskForm = ({newData}) => {
   }
     
   return (
-    <div>
+    <div class="addtask" >
       <form onSubmit={handleSubmit}>
       <input type="text" name="task" value={task} onChange={e=>setTask(e.target.value)} placeholder="Add task"/>
       <input type="submit" value="Add Task" />

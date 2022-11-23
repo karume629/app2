@@ -10,11 +10,13 @@ import { BASE_URL } from '../constant/constant'
 const Home = ({data, newData}) => {
 
   return (
-    <div>
-      <Header />
-      <TaskForm newData={newData} />
-      <Tasklist data={data} />
-      <Footer />
+    <div className='abc'>
+      <div className='xyz'>
+        <Header />
+        <TaskForm newData={newData} />
+        <Tasklist data={data} />
+        <Footer />
+      </div>
     </div>
   )
 }
