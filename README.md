@@ -1,6 +1,12 @@
 # Getting Started with Create React App
 
+live link
+
+https://app2-six-liard.vercel.app/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+This website is a task list where user can add tasks ,delete and update
 
 ## Available Scripts
 
